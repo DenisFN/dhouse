@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*************************************************************************/
+
+/*  Секция - competence   */
+
+/*************************************************************************/
+
+.competence .card {
+  width: 21rem;
+  height: 11rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.competence .card:hover {
+  visibility: visible;
+  z-index: 1;
+}
+
+.competence .card .text-center {
+  width: 100%;
+  position: absolute;
+  margin-top: 7.5rem;
+}
+
+.competence .card .card-body div {
+  float: left;
+}
+
+.competence .card .card-body .card-title {
+  width: 14rem;
+  visibility: visible;
+}
+
+.competence .card .card-body img {
+  visibility: visible;
+  width: 65px;
+  height: 85px;
+}
+

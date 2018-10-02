@@ -1,0 +1,35 @@
+.modal-all-competence .modal-dialog {
+  width: 70em;
+  max-width: none;
+}
+
+.modal-all-competence .modal-dialog .modal-content {
+  border-radius: 0.5rem;
+}
+
+.modal-all-competence .modal-dialog .modal-content .modal-header {
+  background-color: #4b4f55;
+  color: #fff;
+}
+
+.modal-all-competence .modal-dialog .modal-content .modal-body .competence .card {
+  visibility: visible;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-all-competence .modal-dialog .modal-content .modal-body .competence h2 {
+  visibility: hidden;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.modal-all-competence .modal-dialog .modal-content .modal-body .competence .modal-competence-head {
+  height: 0;
+}
+
+.modal-all-competence .modal-dialog .modal-content .modal-body .competence .card {
+  margin-top: 0;
+}
+

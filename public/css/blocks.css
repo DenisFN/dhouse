@@ -1,0 +1,18 @@
+.problems_monitoring .card {
+  width: 18rem;
+  height: 400px;
+}
+
+.problems_monitoring h2 {
+  margin: 30px;
+}
+
+.problems_monitoring .card img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.problems_monitoring .card .card-text {
+  height: 185px;
+}
+

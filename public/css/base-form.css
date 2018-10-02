@@ -1,0 +1,33 @@
+.modal-base-form .modal-dialog .modal-content {
+  border-radius: 0.5rem;
+}
+
+.modal-base-form .modal-dialog .modal-content .modal-header {
+  background-color: #4b4f55;
+  color: #fff;
+}
+
+.modal-base-form .modal-dialog .modal-content .modal-header .close {
+  font-size: 30px;
+}
+
+.modal-base-form .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 18px;
+}
+
+.modal-base-form .modal-dialog .modal-content .modal-body img {
+  float: left;
+}
+
+.modal-base-form .modal-dialog .modal-content .modal-body .phone {
+  float: left;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.modal-base-form .modal-footer div {
+  font-size: 14px;
+  width: 100%;
+}
+

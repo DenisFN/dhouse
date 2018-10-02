@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*************************************************************************/
+
+/*  Секция - problems_monitoring  */
+
+/*************************************************************************/
+
+.problems_monitoring .card {
+  width: 18rem;
+  height: 400px;
+}
+
+.problems_monitoring .card .card-body p {
+  height: 185px;
+}
+
+.problems_monitoring h2 {
+  margin: 40px;
+}
+
+.problems_monitoring .card img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.problems_monitoring .card .card-text {
+  height: 185px;
+}
+

@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/***************************************************************************************/
+
+header {
+  width: 100%;
+  position: relative;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+header .card {
+  border: 0;
+  height: 12rem;
+  background-color: transparent;
+  margin-top: 0;
+}
+
+header .header-logo {
+  width: 18rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+header .header-logo .card-body .logo {
+  position: absolute;
+  top: 24px;
+}
+
+header .header-logo .card-body .podpis {
+  color: #999;
+  position: absolute;
+  left: 3rem;
+  top: 105px;
+}
+
+header .header-webcam {
+  width: 16rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+header .header-webcam .card-body a.franshiza {
+  background-image: url(/img/main/tpms-ico.png);
+  /*background-image: url(/img/main/videonab-ico.png);*/
+  background-position-x: 2rem;
+  background-repeat: no-repeat;
+  color: #dd6620;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 90px;
+  position: absolute;
+  text-decoration: underline;
+  top: 54px;
+  width: 214px;
+  cursor: pointer;
+}
+
+header .header-webcam .card-body a.competence {
+  background-image: url(/img/main/competence-ico.png);
+  background-repeat: no-repeat;
+  color: #999;
+  display: block;
+  padding-left: 78px;
+  position: absolute;
+  text-decoration: underline;
+  top: 111px;
+  width: 214px;
+  height: 2rem;
+  cursor: pointer;
+}
+
+header .header-webcam .card-body a.competence:hover {
+  background-image: url(/img/main/competence-ico-hover.png);
+  color: #dd6620;
+  text-decoration: none;
+}
+
+header .header-cities {
+  width: 20rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+header .header-cities .card-body .cities {
+  width: 227px;
+  position: absolute;
+  top: 21px;
+  background-image: url(/img/main/mini-map.png);
+  height: 117px;
+  background-repeat: no-repeat;
+}
+
+header .header-cities .card-body .cities .setCity {
+  color: #333;
+  position: absolute;
+  left: 64px;
+  top: 29px;
+}
+
+header .header-cities .card-body .cities .locality {
+  font-size: 22px;
+  color: #DD6620;
+  border-bottom-width: 2px;
+  border-bottom-style: dotted;
+  border-bottom-color: #DD6620;
+  display: block;
+  cursor: pointer;
+  float: left;
+  font-weight: bold;
+  position: absolute;
+  left: 64px;
+  top: 50px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+header .header-cities .card-body .clear {
+  clear: both;
+  float: none;
+}
+
+header .header-cities .card-body .cities .grafik {
+  color: #797979;
+  left: 64px;
+  position: absolute;
+  top: 81px;
+}
+
+header .header-contact {
+  width: 16rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+header .header-contact .card-body .tel {
+  position: absolute;
+  right: 0px;
+  top: 35px;
+}
+
+header .header-contact .card-body .tel .free {
+  color: #666666;
+  margin-bottom: 3px;
+  font-style: normal;
+  word-spacing: 1px;
+}
+
+header .header-contact .card-body .tel address {
+  color: #333333;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+header .header-contact .card-body .messengers-head {
+  top: 20px;
+  left: 1rem;
+}
+
+/************************************************************/
+
+/* Оформление мессенджеров для HEAD и FOOTER */
+
+/************************************************************/
+
+.messengers-head {
+  width: 40px;
+  top: 40px;
+  position: relative;
+  left: 30px;
+}
+
+.messengers .btn {
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.messengers .viber {
+  background: url(/img/main/btn-viber-gray.png) no-repeat 0px 0px;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.messengers .telegram {
+  background: url(/img/main/btn-telegram-gray.png) no-repeat 0px 0px;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.messengers .whatsapp {
+  background: url(/img/main/btn-wathapp-gray.png) no-repeat 0px 0px;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.messengers .viber:hover {
+  background: url(/img/main/btn-viber.png) no-repeat 0px 0px;
+}
+
+.messengers .telegram:hover {
+  background: url(/img/main/btn-telegram.png) no-repeat 0px 0px;
+}
+
+.messengers .whatsapp:hover {
+  background: url(/img/main/btn-wathapp.png) no-repeat 0px 0px;
+}
+

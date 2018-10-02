@@ -1,0 +1,28 @@
+/*******************************************************************/
+.navbar {
+  z-index: 20;
+}
+.navbar-nav li.bord {
+  background-image: url(/img/main/border-li.png);
+  background-repeat: no-repeat;
+  background-position: 0px 6px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.navbar-nav .dropdown-menu a {
+  color: #EEEEEE;
+}
+
+.navbar-nav .dropdown-menu a:hover {
+  background-color: #666666;
+  color: #FEF4E9;
+}
+
+.navbar-nav li {
+  list-style-image: none;
+}
+
+.navbar-nav li a{
+  color: #FEF4E9;
+}

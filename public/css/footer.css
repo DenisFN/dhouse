@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+/***************************************************************************************/
+
+footer {
+  background-color: #222426;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #3B3E43;
+  font-size: 16px;
+}
+
+footer .card {
+  width: 18em;
+  height: auto;
+  color: #B1B5BC;
+  font-size: 16px;
+  background-color: transparent;
+  border: 0;
+}
+
+footer .logo {
+  height: auto;
+  width: 18em;
+  background-image: url(/img/main/stavtrack-footer.png);
+  font-size: 14px;
+  color: #B1B5BC;
+  padding-top: 75px;
+  background-repeat: no-repeat;
+  padding-left: 44px;
+}
+
+footer .adr {
+  color: #fff;
+}
+
+footer .adr .title {
+  color: #B1B5BC;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #000;
+}
+
+footer .adr .maps {
+  background-image: url(/img/main/mapsfoot.png);
+  background-repeat: no-repeat;
+  background-position: 0px 4px;
+  padding-left: 1em;
+}
+
+footer .adr .telefon {
+  background-image: url(/img/main/telfoot.png);
+  background-repeat: no-repeat;
+  background-position: 0px 6px;
+  padding-left: 1em;
+}
+
+footer .adr .e-mail {
+  background-image: url(/img/main/emailfoot.png);
+  background-repeat: no-repeat;
+  background-position: 0px 6px;
+  padding-left: 1em;
+}
+
+footer .adr .e-mail a {
+  margin-top: -23px;
+  margin-left: 0px;
+  display: block;
+  font-size: 15px;
+  color: #B1B5BC;
+  height: 18px;
+  padding-left: 3em;
+  width: 100%;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #000;
+}
+
+footer .store .title {
+  color: #B1B5BC;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #000;
+}
+
+footer .store a.appStore {
+  background-image: url(/img/main/appstore.png);
+  height: 39px;
+  width: 130px;
+  margin-bottom: 13px;
+  display: block;
+  margin-top: 10px;
+}
+
+footer .store a.appStore:hover {
+  background-image: url(/img/main/appstore-hov.png);
+}
+
+footer .store a.googlePlay {
+  background-image: url(/img/main/googleplay.png);
+  height: 39px;
+  width: 130px;
+  display: block;
+}
+
+footer .store a.googlePlay:hover {
+  background-image: url(/img/main/googleplay-hov.png);
+}
+
+footer .progmess {
+  width: 11em;
+}
+
+footer .linkmenu {
+  width: 20em;
+}
+
+footer .ofertoInfo {
+  font-size: 14px;
+  color: #B1B5BC;
+  text-align: center;
+}
+
+footer .link a {
+  margin-top: 0px;
+  margin-left: 0px;
+  display: block;
+  font-size: 15px;
+  color: #B1B5BC;
+  height: 22px;
+  padding-top: 3px;
+  width: 134px;
+  float: left;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #000;
+}
+
+footer .link a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer .socseti {
+  padding: 1em 0 1em 3em;
+}
+
+footer .socseti a.vk {
+  background-image: url(/img/main/vk.png);
+  height: 20px;
+  width: 20px;
+  display: block;
+  float: left;
+}
+
+footer .socseti a.vk:hover {
+  background-image: url(/img/main/vk-hov.png);
+}
+
+footer .socseti a.fc {
+  background-image: url(/img/main/fc.png);
+  display: block;
+  height: 20px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+footer .socseti a.fc:hover {
+  background-image: url(/img/main/fc-hov.png);
+}
+
+footer .socseti a.tw {
+  background-image: url(/img/main/tw.png);
+  display: block;
+  height: 20px;
+  width: 20px;
+  float: left;
+}
+
+footer .socseti a.tw:hover {
+  background-image: url(/img/main/tw-hov.png);
+}
+
+footer .socseti a.yu {
+  background-image: url(/img/main/yu.png);
+  display: block;
+  height: 20px;
+  width: 20px;
+  float: left;
+  margin-left: 10px;
+}
+
+footer .socseti a.yu:hover {
+  background-image: url(/img/main/yu-hov.png);
+}
+
+footer .messengers {
+  margin-top: 1em;
+}
+
+/***************************************************************************/
+
+/* мобильная версия футера */
+
+/***************************************************************************/
+
+footer #accordion-footer .card {
+  margin-top: 0;
+  background: #1c1d1f;
+  font-size: 17px;
+}
+
+footer #accordion-footer .card .card-header {
+  background: url(/img/main/a-down.png) no-repeat 0px 0px;
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;
+  background-size: 20px 20px;
+  width: 95%;
+}
+
+footer #accordion-footer .card .card-body .adr {
+  padding: 0 10px;
+}
+
+footer #accordion-footer .card .card-header button {
+  text-decoration: none;
+}
+
+footer #accordion-footer .link div {
+  background: url(/img/main/3-dots.png) no-repeat 0px 0px;
+  background-position-y: 18px;
+  background-position-x: 10px;
+}
+
+footer #accordion-footer .link a {
+  color: #ff9500;
+  font-weight: normal;
+  float: none;
+  padding-top: 8px;
+  padding-left: 35px;
+  padding-bottom: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 44px;
+  width: 100%;
+  background: url(/img/main/a-href.png) no-repeat 0px 0px;
+  background-size: 13px 12px;
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;
+}
+

@@ -1,0 +1,92 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+//user font
+@import url(//fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,cyrillic);
+@import url(//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext,cyrillic);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+/***************************************************************************/
+/*** Общие стили для всех форм *********************************************/
+/***************************************************************************/
+body {
+  font-family: 'PT Sans Narrow', 'sans-serif';
+  background-color: #272b30;
+  font-size: 16px;
+  color: #aaaaaa;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+
+.card {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.my_hr1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: block;
+  clear: both;
+  margin: 10px 0;
+  height: 1px;
+  background-image: linear-gradient(to right, #fff, #bbb, #fff);
+}
+
+.my_hr2::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: block;
+  clear: both;
+  margin: 10px 0;
+  height: 12px;
+  border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+//.card-body li {
+//  list-style-image: url(/img/main/foli.png);
+//}
+//
+//.main a {
+//  color: #E47B1D !important;
+//}
+
+li {
+  list-style-image: url(/img/main/foli.png);
+}
+
+a {
+  color: #E47B1D;
+}

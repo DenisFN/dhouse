@@ -1,0 +1,453 @@
+@charset "UTF-8";
+
+/*******************************************************************************/
+
+/*  Секция - Reviews (Оформление блока потребительского индекса NPS + Отзывы)  */
+
+/*******************************************************************************/
+
+.reviews-background {
+  background-color: #D7DCE3;
+}
+
+.reviews {
+  margin-top: 30px;
+}
+
+.reviews .rotatorOtzivyNPS {
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding-top: 22px;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps {
+  width: auto;
+  background-color: #fff;
+  border: 0px solid #D7DCE3;
+  border-radius: 5px;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .card {
+  margin-top: 0;
+  height: 90px;
+  background-color: transparent;
+  border: 0;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .card .card-body {
+  padding: 1em 2em;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .card .box-img {
+  width: 100px;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .box-title {
+  min-width: 21rem;
+  width: 46rem;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .box-title h2 {
+  margin: 0;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .box-title .card-body .card-title p {
+  font-size: 18px;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .box-link .card-body .card-title p {
+  font-size: 18px;
+  padding-top: 42px;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .box-circle .card-body .nps {
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: -15px;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .card .card-body .nps .nps-count {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .box-month {
+  text-align: center;
+  width: 23em;
+  min-height: 7em;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .box-month h2 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .box-circle {
+  width: 11em;
+  min-height: 10em;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .card .card-body .cssload-bell {
+  margin-top: -88px;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .smile-box {
+  width: 18em;
+  height: 8em;
+  font-size: 18px;
+}
+
+.reviews .rotatorOtzivyNPS .box-nps .smile-box div {
+  float: left;
+}
+
+/************************ оформление блока отзывов ***********************/
+
+.reviews .rotatorOtzivyNPS .box-otzivy {
+  width: auto;
+  background-color: #d7dce3;
+  border: 0px solid #D7DCE3;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .control h2 {
+  font-weight: bold;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .card {
+  border: 0;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .card .card-body {
+  padding: 0;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .card .card-body .carousel-control-prev-icon {
+  background-image: url(/img/sections/reviews/left_otz.png);
+  width: 61px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .card .card-body .carousel-control-prev {
+  width: 65px;
+  float: left;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .card .card-body .carousel-control-next-icon {
+  background-image: url(/img/sections/reviews/right_otz.png);
+  width: 61px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .card .card-body .carousel-control-next {
+  width: 65px;
+  float: right;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .slide-back {
+  background-image: url(/img/sections/reviews/otziv.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 110px;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .slide-back .otzivy-head {
+  margin-left: 1em;
+  background-color: transparent;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .slide-back .otzivy-head .card-body {
+  padding: 0px;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .slide-back .otzivy-head .card-body h2 {
+  font-weight: bold;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .slide-back .otzivy-button {
+  width: 11em;
+  height: 42px;
+  margin-right: 1em;
+  background-color: transparent;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .media {
+  background-color: #FFF;
+  width: 460px;
+  height: 16em;
+  float: none;
+  background-image: url(/img/sections/reviews/oblako.png);
+  background-position: 0px bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
+  border: 0px solid #D7DCE3;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .card .card-body .small .media {
+  width: 100%;
+  height: auto;
+  background-image: none;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .card .card-body .small .media .media-body p {
+  width: auto;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .media .media-body {
+  color: #333;
+  width: 100%;
+  padding: 10px;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .media .media-body p {
+  color: #333;
+  display: block;
+  float: left;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 8px;
+  padding-top: 14px;
+  width: 272px;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .card .card-body .podpis {
+  width: 400px;
+  margin-left: 20px;
+  font-size: 16px;
+  text-shadow: 0 1px 0 #fff;
+  color: #333;
+  text-align: left;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .card .card-body .small .podpis {
+  margin-top: 1em;
+  color: #333;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .carousel-inner .carousel-item {
+  min-height: 26em;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .carousel-inner .carousel-item .carousel-caption {
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .carousel-inner .carousel-item .carousel-caption .card {
+  background-color: #d7dce3;
+}
+
+/******************************* оформление блока благодарственных писем ********************************/
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .card .card-body .noborder {
+  margin: 0px;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .card .card-body .box {
+  float: left;
+  width: 165px;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .card .card-body .box .oblako {
+  background-color: #FFF;
+  width: 165px;
+  height: auto;
+  float: none;
+  border: 0px solid #D7DCE3;
+  border-radius: 5px;
+  padding: 12px 0;
+}
+
+.reviews .rotatorOtzivyNPS .carousel .carousel-inner .carousel-item .carousel-caption .card .card-body .box .podpis {
+  width: 160px;
+  font-size: 18px;
+  text-shadow: 0 1px 0 #fff;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/************************** Число подключенных абонентов в WIALON ***********************************/
+
+.reviews .rotatorOtzivyNPS .box-otzivy .wialon {
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 0px 0px;
+  width: 460px;
+  right: 0px;
+  bottom: -49px;
+  position: absolute;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .wialon .top {
+  height: 40px;
+  background-image: url(/img/sections/reviews/wialon.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: #4b4f55;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 7px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .wialon .bot {
+  background-color: #4b4f55;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+}
+
+.reviews .rotatorOtzivyNPS .box-otzivy .wialon .bot span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  color: #FFFFFF;
+  line-height: 20px;
+  margin-top: 7px;
+  display: block;
+  float: left;
+  letter-spacing: 5px;
+  margin-right: 154px;
+}
+
+/**************************************************************/
+
+/*************** Анимационный круг для индекса NPS ************/
+
+/**************************************************************/
+
+.cssload-bell {
+  width: 98px;
+  height: 110px;
+  border-radius: 100%;
+  position: absolute;
+  /*left: calc(50% - 49px);*/
+}
+
+.cssload-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.cssload-circle .cssload-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 5px solid rgba(250, 129, 0, 0.7);
+  border-right: none;
+  border-top: none;
+  background-clip: padding;
+  -webkit-box-shadow: inset 0px 0px 10px rgba(235, 138, 35, 0.15);
+          box-shadow: inset 0px 0px 10px rgba(235, 138, 35, 0.15);
+}
+
+.cssload-circle:nth-of-type(0) {
+  transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+}
+
+.cssload-circle:nth-of-type(0) .cssload-inner {
+  animation: cssload-spin 4.4s infinite linear;
+  -o-animation: cssload-spin 4.4s infinite linear;
+  -ms-animation: cssload-spin 4.4s infinite linear;
+  -webkit-animation: cssload-spin 4.4s infinite linear;
+  -moz-animation: cssload-spin 4.4s infinite linear;
+}
+
+.cssload-circle:nth-of-type(1) {
+  transform: rotate(70deg);
+  -o-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+}
+
+.cssload-circle:nth-of-type(1) .cssload-inner {
+  animation: cssload-spin 4.4s infinite linear;
+  -o-animation: cssload-spin 4.4s infinite linear;
+  -ms-animation: cssload-spin 4.4s infinite linear;
+  -webkit-animation: cssload-spin 4.4s infinite linear;
+  -moz-animation: cssload-spin 4.4s infinite linear;
+}
+
+.cssload-circle:nth-of-type(2) {
+  transform: rotate(140deg);
+  -o-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  -webkit-transform: rotate(140deg);
+  -moz-transform: rotate(140deg);
+}
+
+.cssload-circle:nth-of-type(2) .cssload-inner {
+  animation: cssload-spin 4.4s infinite linear;
+  -o-animation: cssload-spin 4.4s infinite linear;
+  -ms-animation: cssload-spin 4.4s infinite linear;
+  -webkit-animation: cssload-spin 4.4s infinite linear;
+  -moz-animation: cssload-spin 4.4s infinite linear;
+}
+
+.cssload-bell {
+  animation: cssload-spin 11s infinite linear;
+  -o-animation: cssload-spin 11s infinite linear;
+  -ms-animation: cssload-spin 11s infinite linear;
+  -webkit-animation: cssload-spin 11s infinite linear;
+  -moz-animation: cssload-spin 11s infinite linear;
+}
+
+@keyframes cssload-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cssload-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/**************************************************************/
+
+/*************** Конец анимации *******************************/
+
+/**************************************************************/
+
