@@ -6,21 +6,25 @@ use App\Models\Category;
 use App\Models\Page;
 use App\Models\Units;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Http\Request;
 
 
 class PagesController extends Controller
 {
-    public function search()
+    public function search(Request $request)
     {
-        var_dump('ok');
+        dd($request->character);
+
 //        $name = Input::get('character');
-//        $searchResult = Units::where('fio', 'LIKE', "%$name%")->get();
-//        var_dump($searchResult);
+        $page=Page::where('url','=','search')->first();
+
+        $searchResult = Units::where('fio', 'LIKE', "%$fio%")->get();
+        dump($searchResult);
 
 //        return View::make('pages.one-link-page.search')
 //            ->with('fio', $name)
 //            ->with('searchResult', $searchResult);
+        return view('pages.one-link-page.'.$page->url, ['page'=>$page], ['searchResult'=>$searchResult]);
 //        return view('pages.one-link-page.search', ['searchResult'=>$searchResult]);
     }
 

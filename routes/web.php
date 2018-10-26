@@ -11,6 +11,10 @@
 |
 */
 
+Route::post('/search', 'PagesController@search');
+
+
+
 
 Route::get('/', 'PagesController@index');
 
@@ -18,4 +22,3 @@ Route::get('/{url}', 'PagesController@first_pages');
 
 Route::get('/{category}/{url}', 'PagesController@category_pages');
 
-Route::get('/search', 'PagesController@search');

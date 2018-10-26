@@ -21,10 +21,17 @@
                 <span class="badge badge-pill badge-light">{{ $page->h1 }}</span>
             </div>
 
-            <form id="custom-search-form" class="form-search form-horizontal pull-right"
-                  action="{{action('PagesController@search')}}" method="get">
+{{--            {{URL::full()}}--}}
+{{--            {{$searchResult->attributes->fio}}--}}
+
+
+            <form id="custom-search-form" class="form-search form-horizontal pull-right mt-5"
+                  action="/search" method="post">
+                {{--{{action('PagesController@search')}}--}}
                 <div class="input-append spancustom">
+                    {{ csrf_field() }}
                     <input type="text" class="search-query" name="character" placeholder="fio">
+
                     <button type="submit" class="btn">search</button>
                 </div>
             </form>

@@ -42,13 +42,9 @@
                             <span class="badge badge-light badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
                                 {{ $units::where('active', '=', '1')->count() }}</span>
                         </a>
-                        <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search">
+                        <a href="/search" class="modal-show">
                             Поиск
                         </a>
-<<<<<<< HEAD
-                        <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search" title="Сотрудники, работавшие ранее в компании">
-                            Лента светлой памяти
-=======
                         <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search">
                             Статистика по сотрудникам
                         </a>
@@ -57,7 +53,6 @@
                             Герои минувших лет
                             <span class="badge badge-secondary badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
                                 {{ $units::where('active', '=', '0')->count() }}</span>
->>>>>>> refs/remotes/origin/master
                         </a>
                     </div>
 
