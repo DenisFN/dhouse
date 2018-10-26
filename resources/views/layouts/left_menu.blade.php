@@ -41,6 +41,9 @@
                         <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search">
                             Поиск
                         </a>
+                        <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search" title="Сотрудники, работавшие ранее в компании">
+                            Лента светлой памяти
+                        </a>
                     </div>
 
                     {{--Управление АТС--}}
