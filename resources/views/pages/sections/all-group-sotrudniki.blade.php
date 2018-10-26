@@ -1,5 +1,5 @@
 
-<div class="w-100 pt-4 pb-5">
+<div class="w-100 pt-4" style="overflow: auto;">
     <h2>Список сотрудников</h2>
     {{--Список всех сотрудников--}}
     <div class="float-left mr-4 mt-2">
