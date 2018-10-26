@@ -21,10 +21,18 @@
                 <span class="badge badge-pill badge-light">{{ $page->h1 }}</span>
             </div>
 
-            {{--Список сотрудников выбранного отдела--}}
-            <div class="mt-5 map">
+            <form id="custom-search-form" class="form-search form-horizontal pull-right"
+                  action="{{action('PagesController@search')}}" method="get">
+                <div class="input-append spancustom">
+                    <input type="text" class="search-query" name="character" placeholder="fio">
+                    <button type="submit" class="btn">search</button>
+                </div>
+            </form>
 
-            </div>
+            {{--Список сотрудников выбранного отдела--}}
+            {{--<div class="mt-5 map">--}}
+
+            {{--</div>--}}
 
         </div>
     </div>

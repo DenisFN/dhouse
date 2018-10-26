@@ -22,24 +22,37 @@
                     <a class="modal-show w-100" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <i class="fa fa-user-o mr-2" aria-hidden="true"></i>
                         Сотрудники
-                        <span class="badge badge-dark badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">{{ $units::count() }}</span>
+                        <span class="badge badge-dark badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
+                            {{ $units::where('active', '=', '1')->count() }}</span>
                     </a>
 
                     <div id="collapseOne" class="collapse bg-dark" aria-labelledby="headingOne" data-parent="#accordion">
                         <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_section">
                             Отделы
-                            <span class="badge badge-light badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">{{ $page::where('id_category', '=', '2')->count() }}</span>
+                            <span class="badge badge-light badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
+                                {{ $page::where('id_category', '=', '2')->count() }}</span>
                         </a>
                         <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_work_group">
                             Рабочие группы
-                            <span class="badge badge-light badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">{{ $page::where('id_category', '=', '3')->count() }}</span>
+                            <span class="badge badge-light badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
+                                {{ $page::where('id_category', '=', '3')->count() }}</span>
                         </a>
                         <a href="/all-sotrudniki">
                             Все сотрудники
-                            <span class="badge badge-light badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">{{ $units::count() }}</span>
+                            <span class="badge badge-light badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
+                                {{ $units::where('active', '=', '1')->count() }}</span>
                         </a>
                         <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search">
                             Поиск
+                        </a>
+                        <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search">
+                            Статистика по сотрудникам
+                        </a>
+                        <a href="/workout-sotrudniki" class="text-secondary" title="Сотрудники работавшие ранее в компании"
+                        style="background: linear-gradient(to bottom left, #ccc, #fff);">
+                            Герои минувших лет
+                            <span class="badge badge-secondary badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
+                                {{ $units::where('active', '=', '0')->count() }}</span>
                         </a>
                     </div>
 
