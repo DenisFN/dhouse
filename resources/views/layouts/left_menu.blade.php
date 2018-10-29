@@ -42,7 +42,7 @@
                             <span class="badge badge-light badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
                                 {{ $units::where('active', '=', '1')->count() }}</span>
                         </a>
-                        <a href="/search" class="modal-show">
+                        <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search">
                             Поиск
                         </a>
                         <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search">

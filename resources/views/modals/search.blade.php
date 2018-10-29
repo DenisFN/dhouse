@@ -5,30 +5,23 @@
 
             <div class="modal-header">
                 <h5 class="modal-title text-center" id="modal-base-form-label">
-                    Рабочие группы компании
+                    Поиск сотрудника
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
 
-            {{--<form class="modal-body" id="searchModal">--}}
-                {{--<input type="text" name="name" class="form-control" id="name" aria-describedby="" placeholder="ФИО сотрудника">--}}
-
-                {{--<div class="btn btn-warning mr-2 mb-2" onclick="sendFormData('searchModal');">Найти</div>--}}
-                {{--<a type="submit" class="btn btn-warning mr-2 mb-2" href="/search">Найти</a>--}}
-            {{--</form>--}}
-
-            {{--<form id="custom-search-form" class="form-search form-horizontal pull-right"--}}
-                  {{--action="{{route('searchSimple')}}" method="get">--}}
-                {{--<div class="input-append spancustom">--}}
-                    {{--<input type="text" class="search-query" name="character" placeholder="name">--}}
-                    {{--<button type="submit" class="btn">search</button>--}}
-                {{--</div>--}}
-            {{--</form>--}}
+            <form class="p-3" action="/search" method="post">
+                {{ csrf_field() }}
+                <div class="form-group float-left w-75">
+                    <input type="text" class="form-control" name="search_fio" placeholder="Введите ФИО">
+                </div>
+                <button type="submit" class="btn btn-warning ml-3">Найти</button>
+            </form>
 
             <div class="modal-footer">
-                <div class="w-100">* Введите ФИО для поиска сотрудника</div>
+                <div class="w-100">* Введите ФИО или часть имени для поиска сотрудника</div>
             </div>
 
         </div>

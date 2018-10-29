@@ -51,11 +51,19 @@
                                 <br>
                                 {{ $units->doljnost }}<br>
 
-                                @if ( $units->birthday != null)
-                                    <strong>Дата рождения:</strong>
-                                    <br>
-                                    @php echo date('d-m-Y',strtotime( $units->birthday )); @endphp
-                                    @php echo '('.(date('Y')-date('Y',strtotime( $units->birthday ))).' лет)'; @endphp
+                                {{--@if ( $units->birthday != null)--}}
+                                    {{--<strong>Дата рождения:</strong>--}}
+                                    {{--<br>--}}
+                                    {{--@php echo date('d-m-Y',strtotime( $units->birthday )); @endphp--}}
+                                    {{--@php echo '('.(date('Y')-date('Y',strtotime( $units->birthday ))).' лет)'; @endphp--}}
+                                {{--@endif--}}
+                                @if ($units->birthday)
+                                    <p>
+                                        Дата рождения: @php echo date('d-m-Y',strtotime( $units->birthday )).' г.<br>'.
+                                                        '('.(date('Y')-date('Y',strtotime( $units->birthday ))).' лет)'; @endphp</p>
+                                @else
+                                    <p>Дата рождения: <span class="text-danger">не указана</span>
+                                        <br>(стесняшка.. ☺)</p>
                                 @endif
 
                                 @if ($units->comment != null)
