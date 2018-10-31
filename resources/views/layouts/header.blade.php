@@ -10,11 +10,14 @@
             </a>
 
             <div class="container">
-            <div class="w-100 text-center mr-5">
-                <img src="/img/main/stavtrack-mobile-logo.png" alt="" height="38">
+                <div class="w-100 text-center mr-5">
+                    <img src="/img/main/stavtrack-mobile-logo.png" alt="" height="38">
+                </div>
             </div>
+
+            <div class="badge badge-pill badge-secondary">
+                @php echo date('d-m-Y',strtotime(now())); @endphp
             </div>
-            
 
 
 
