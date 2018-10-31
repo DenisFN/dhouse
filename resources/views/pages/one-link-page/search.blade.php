@@ -134,6 +134,35 @@
             @endif
 
 
+{{--            {{$results = DB::select('--}}
+{{--            SELECT AVG(DATEDIFF("YYYY", birthdate , GETDATE()))--}}
+{{--            FROM units--}}
+{{--            WHERE DATEDIFF("YYYY", birthdate , GETDATE()) < 30')}}--}}
+
+            {{$units::select('birthday')->whereNotNull('birthday')->where('active','=',1)->avg('birthday')}}
+            {{--{{$units::select('birthday')->whereNotNull('birthday')->where('active','=',1)->count()}}--}}
+{{--            {{$units::parse('birthday')->age}}--}}
+
+
+            {{--{{$birth = Carbon::createFromFormat('d.m.Y','25.02.2002')}}--}}
+            {{--{{$birth->diffInYears(Carbon::now())}}--}}
+
+
+            @php
+                $i=0; //$n=0;
+            @endphp
+            @foreach($units::select('birthday')->whereNotNull('birthday')->where('active','=',1)->get() as $units)
+                @php
+                    //echo (date('Y')-date('Y',strtotime( $units->birthday ))).'<br>';
+                    $i+=(date('Y')-date('Y',strtotime( $units->birthday )));
+                    //$n++;
+                @endphp
+            @endforeach
+            @php
+                echo $i.'<br>';
+                echo 'avg='.intval($i/ $units::select('birthday')->whereNotNull('birthday')->where('active','=',1)->count() );
+            @endphp
+
 
         </div>
     </div>
