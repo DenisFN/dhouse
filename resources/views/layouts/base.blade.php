@@ -42,6 +42,7 @@
             @include('modals.section')
             @include('modals.work-group')
             @include('modals.search')
+            @include('modals.future')
 
         {{--данные страницы--}}
         @yield('content')

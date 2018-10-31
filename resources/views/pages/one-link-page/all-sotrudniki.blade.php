@@ -26,7 +26,7 @@
                 <h2>Список всех сотрудников ☺</h2>
 
                 @php $i=0; @endphp
-                @foreach($units::select()->get() as $units)
+                @foreach($units::where('active','=',1)->get() as $units)
                     @php $i++; @endphp
                     <div class="float-left mr-4 mt-2">
                         <span class="badge badge-pill badge-warning">@php echo $i; @endphp</span>
@@ -39,7 +39,7 @@
             {{--список всех сотрудников (размещаем на карте)--}}
             <div class="mt-5 map">
                 @php $i=0; @endphp
-                @foreach($units::select()->get() as $units)
+                @foreach($units::where('active','=',1)->get() as $units)
 
                     @php $i++; @endphp
 

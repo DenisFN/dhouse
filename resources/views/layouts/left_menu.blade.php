@@ -45,31 +45,40 @@
                         <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search">
                             Поиск
                         </a>
-                        <a href="#" class="modal-show" data-toggle="modal" data-target="#modal_search">
+                        <a href="/statistic">
                             Статистика по сотрудникам
                         </a>
-                        <a href="/workout-sotrudniki" class="text-secondary" title="Сотрудники работавшие ранее в компании"
-                        style="background: linear-gradient(to bottom left, #ccc, #fff);">
+                        <a href="/workout-sotrudniki" title="Сотрудники работавшие ранее в компании">
                             Герои минувших лет
-                            <span class="badge badge-secondary badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
+                            <span class="badge badge-light badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">
                                 {{ $units::where('active', '=', '0')->count() }}</span>
                         </a>
                     </div>
 
                     {{--Управление АТС--}}
-                    <a class="modal-show w-100 collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                        <i class="fa fa-fax mr-2" aria-hidden="true"></i>
-                        Управление АТС
-                        <span class="badge badge-dark badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">8</span></a>
-                    </a>
-                    <div id="collapse-2" class="collapse bg-dark" aria-labelledby="heading-2" data-parent="#accordion">
-                        {{--<div class="card-body">--}}
-                            Anim pariatur cliche reprehenderit-2
-                        {{--</div>--}}
-                    </div>
+                    {{--<a class="modal-show w-100 collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">--}}
+                        {{--<i class="fa fa-fax mr-2" aria-hidden="true"></i>--}}
+                        {{--Управление АТС--}}
+                        {{--<span class="badge badge-dark badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">8</span></a>--}}
+                    {{--</a>--}}
+                    {{--<div id="collapse-2" class="collapse bg-dark" aria-labelledby="heading-2" data-parent="#accordion">--}}
+                            {{--Anim pariatur cliche reprehenderit-2--}}
+                    {{--</div>--}}
 
                 </div>
             </li>
+
+            {{--Управление АТС--}}
+            <li>
+                <a href="#" class="modal-show w-100" data-toggle="modal" data-target="#modal_future">
+                    <i class="fa fa-fax mr-2" aria-hidden="true"></i>
+                    <i class="far fa-lightbulb"></i>
+                    Управление АТС
+                    <span class="badge badge-dark badge-pill float-right mr-2" style="margin-top: 10px; text-indent: 0;">8</span>
+                </a>
+            </li>
+
+            {{--Освещение--}}
             <li>
                 <a href="#">
                     <i class="fa fa-lightbulb mr-2" aria-hidden="true"></i>
