@@ -48,14 +48,14 @@
         @yield('content')
 
 
-    </div>
-
 
 
 
     <!-- Scripts ------------------------------------------------------------------------------------------------------>
     <script src="{{ asset('js/app.js') }}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-tools/1.2.7/jquery.tools.min.js" ></script>
+            {{--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>--}}
+            {{--<script src="/js/jquery.min.js"></script>--}}
 
 
     {{-- боковое меню ------------------------------------------}}

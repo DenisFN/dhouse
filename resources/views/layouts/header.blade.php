@@ -15,9 +15,37 @@
                 </div>
             </div>
 
-            <div class="badge badge-pill badge-secondary">
-                @php echo date('d-m-Y',strtotime(now())); @endphp
-            </div>
+
+            @guest
+                {{--<div>gost</div>--}}
+                <a class="text-dark" href="{{ route('login') }}">
+                    <div class="badge badge-pill badge-warning">
+                        Войти
+                    </div>
+                </a>
+            @else
+                {{--<div class="btn-group btn-group-sm" role="group">--}}
+                    {{--<button id="btnGroupDrop1" type="button" class="badge badge-pill badge-warning dropdown-toggle"--}}
+                            {{--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+                        {{--{{ Auth::user()->name }}--}}
+                    {{--</button>--}}
+                    {{--<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">--}}
+                        {{--<a class="dropdown-item badge badge-pill badge-warning" href="{{ route('logout') }}">--}}
+                                {{--Выйти--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+
+                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary disabled">{{ Auth::user()->name }}</button>
+                    <a class="btn btn-warning" href="{{ route('logout') }}">Выйти</a>
+                </div>
+            @endguest
+
+
+            {{--<div class="badge badge-pill badge-secondary">--}}
+                {{--@php echo date('d-m-Y',strtotime(now())); @endphp--}}
+            {{--</div>--}}
 
 
 

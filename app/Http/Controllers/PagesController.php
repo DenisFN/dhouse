@@ -20,7 +20,15 @@ class PagesController extends Controller
         return view('pages.one-link-page.'.$page->url, ['page'=>$page, 'searchResult'=>$searchResult]);
     }
 
+    public function turn()
+    {
+        return view('pages.one-link-page.turn');
+    }
 
+    public function robot()
+    {
+        return view('pages.one-link-page.robot');
+    }
 
     public function index()
     {
@@ -48,6 +56,17 @@ class PagesController extends Controller
             return view('pages.category-link-page.'.$page->url, ['page'=>$page], ['category'=>$category]);
         }
 
+    }
+
+
+    public function category_units($id)
+    {
+        $units=Units::where('id','=',$id)->first();
+
+        $page->title='ok';
+
+        //выводим простую страницу из БД
+        return view('pages.category-link-page.base-units-page', ['units'=>$units]);
     }
 
 
